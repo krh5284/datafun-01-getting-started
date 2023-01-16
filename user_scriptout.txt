@@ -1,1 +1,13 @@
 # Paste the output from a sample run here.
+PS C:\Users\krh52\Documents\datafun-01-getting-started> & C:/Users/krh52/AppData/Local/Programs/Python/Python310/python.exe c:/Users/krh52/Documents/datafun-01-getting-started/user_script.py
+Enter a temperature: 0
+Enter another temperature: 24
+Enter a third temperature: 30
+The sum of the three tempertures is  54
+The average temperature is  18
+The product of the three temperatues is  0
+The minimum temperature is 0
+The maximum temperature is  30
+The range of temperatures is  0 - 30
+Bring sunscreen
+PS C:\Users\krh52\Documents\datafun-01-getting-started>
