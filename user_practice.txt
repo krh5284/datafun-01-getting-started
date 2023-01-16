@@ -19,3 +19,266 @@ hello
 >>> print( min (a, b))
 3
 >>> 
+
+(base) C:\Users\krh52>ipython
+Python 3.9.15 (main, Nov 24 2022, 14:39:17) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.31.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: x = 7
+
+In [2]: y = 3
+
+In [3]: x + y
+Out[3]: 10
+
+In [4]: total = x + y
+
+In [5]: total
+Out[5]: 10
+
+In [6]: type(x)
+Out[6]: int
+
+In [7]: type(10.5)
+Out[7]: float
+
+In [8]: total = 10.8 + 12.2 + 0.2
+
+In [9]: total
+Out[9]: 23.2
+
+In [10]: 7 * 4
+Out[10]: 28
+
+In [11]: 2 ** 10
+Out[11]: 1024
+
+In [12]: 9 ** (1/2)
+Out[12]: 3.0
+
+In [13]: 7 / 4
+Out[13]: 1.75
+
+In [14]: 7 // 4
+Out[14]: 1
+
+In [15]: 3 // 5
+Out[15]: 0
+
+In [16]: 14 // 7
+Out[16]: 2
+
+In [17]: -13 / 4
+Out[17]: -3.25
+
+In [18]: -13 // 4
+Out[18]: -4
+
+In [19]: 123 / 0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-19-76e1a9ab9410> in <module>
+----> 1 123 / 0
+
+ZeroDivisionError: division by zero
+
+In [20]: z + 7
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-20-2ca5f6c7aca2> in <module>
+----> 1 z + 7
+
+NameError: name 'z' is not defined
+
+In [21]: 17 % 5
+Out[21]: 2
+
+In [22]: 7.5 % 3.5
+Out[22]: 0.5
+
+In [23]: 10 * (5 + 3)
+Out[23]: 80
+
+In [24]: 10 * 5 + 3
+Out[24]: 53
+
+In [25]: 3 * (4 - 5)
+Out[25]: -3
+
+In [26]: 3 * 4 - 5
+Out[26]: 7
+
+In [27]: 4 ** 3 ** 2
+Out[27]: 262144
+
+In [28]: (4 ** 3) ** 2
+Out[28]: 4096
+
+In [29]: 4 ** (3 ** 2)
+Out[29]: 262144
+
+In [30]: print('Welcome to Python')
+Welcome to Python
+
+In [31]: print('Welcome\nto\n\nPython!')
+Welcome
+to
+
+Python!
+
+In [32]: print('This is a longer string, so we \
+    ...:  split it over two lines')
+This is a longer string, so we  split it over two lines
+
+In [33]: print('Sum is', 7 + 3)
+Sum is 10
+
+In [34]: type('word')
+Out[34]: str
+
+In [35]: print('int(5.2)', 'truncates 5.2 to', int(5.2))
+int(5.2) truncates 5.2 to 5
+
+In [36]: print('Display "hi" in quotes')
+Display "hi" in quotes
+
+In [37]: print('Display 'hi' in quotes)
+  File "<ipython-input-37-1df0eba7aa52>", line 1
+    print('Display 'hi' in quotes)
+                    ^
+SyntaxError: invalid syntax
+
+
+In [38]: print('Display \'hi\' in quotes')
+Display 'hi' in quotes
+
+In [39]: print("Display the name O'Brien")
+Display the name O'Brien
+
+In [40]: print("Display \"hi\" in quotes")
+Display "hi" in quotes
+
+In [41]: print("""Display "hi" and 'bye' in quotes""")
+Display "hi" and 'bye' in quotes
+
+In [42]: triple_quoted_string = """This is a triples-quoted
+    ...: string that spans two lines"""
+
+In [43]: print(triple_quoted_string)
+This is a triples-quoted
+string that spans two lines
+
+In [44]: triple_quoted_string
+Out[44]: 'This is a triples-quoted \nstring that spans two lines'
+
+In [45]: print("""This is a lengthy
+    ...: multiline string containing
+    ...: a few lines \
+    ...: of text""")
+This is a lengthy
+multiline string containing
+a few lines of text
+
+In [46]: name = input("What's your name? ")
+What's your name? Kellie
+
+In [47]: name
+Out[47]: 'Kellie'
+
+In [48]: print(name)
+Kellie
+
+In [49]: value1= input('Enter first number: ')
+Enter first number: 7
+
+In [50]: value2 = input('Enter second number: ')
+Enter second number: 3
+
+In [51]: value1 + value 2
+  File "<ipython-input-51-87196aad3521>", line 1
+    value1 + value 2
+                   ^
+SyntaxError: invalid syntax
+
+
+In [52]: value1 + value2
+Out[52]: '73'
+
+In [53]: value = input('Enter an integer: ')
+Enter an integer: 7
+
+In [54]: value = int(value)
+
+In [55]: value
+Out[55]: 7
+
+In [56]: another_value = int(input('Enter another integer: '))
+Enter another integer: 13
+
+In [57]: another_value
+Out[57]: 13
+
+In [58]: value + another_value
+Out[58]: 20
+
+In [59]: bad_value = int(input('Enter another integer: '))
+Enter another integer: hello
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-59-cd36e6cf8911> in <module>
+----> 1 bad_value = int(input('Enter another integer: '))
+
+ValueError: invalid literal for int() with base 10: 'hello'
+
+In [60]: int(10.5)
+Out[60]: 10
+
+In [61]: float('6.2') * 3.3
+Out[61]: 20.46
+
+
+
+tafun-01-getting-started/user_script.py
+Enter a temperature: 32
+Enter another temperature: 26
+Enter a third temperature: 30
+  File "c:\Users\krh52\Documents\datafun-01-getting-started\user_script.py", line 12
+    r = minimum '-' maximum
+                ^^^
+SyntaxError: invalid syntax
+PS C:\Users\krh52\Documents\datafun-01-getting-started> & C:/Users/krh52/AppData/Local/Programs/Python/Python310/python.exe c:/Users/krh52/Documents/datafun-01-getting-started/user_script.py
+  File "c:\Users\krh52\Documents\datafun-01-getting-started\user_script.py", line 18
+    print('The range of temperatures is ', minimum '-', maximum)
+                                                   ^^^
+tafun-01-getting-started/user_script.py
+Enter a temperature: 32
+Enter another temperature: 26
+Enter a third temperature: 30
+The sum of the three tempertures is  88
+The average temperature is  29.333333333333332
+The product of the three temperatues is  24960
+The minimum temperature is 26
+The maximum temperature is  32
+tafun-01-getting-started/user_script.py
+Enter a temperature: 32
+Enter another temperature: 26
+Enter a third temperature: 30
+The sum of the three tempertures is  88
+The average temperature is  29
+The product of the three temperatues is  24960
+The minimum temperature is 26
+The maximum temperature is  32
+The range of temperatures is  26 - 32
+PS C:\Users\krh52\Documents\datafun-01-getting-started> & C:/Users/krh52/AppData/Local/Programs/Python/Python310/python.exe c:/Users/krh52/Documents/datafun-01-getting-started/user_script.py
+Enter a temperature: 22
+Enter another temperature: 24
+Enter a third temperature: 30
+The sum of the three tempertures is  76
+The average temperature is  25
+The product of the three temperatues is  15840
+The minimum temperature is 22
+The maximum temperature is  30
+The range of temperatures is  22 - 30
+Bring sunscreen
+PS C:\Users\krh52\Documents\datafun-01-getting-started>
